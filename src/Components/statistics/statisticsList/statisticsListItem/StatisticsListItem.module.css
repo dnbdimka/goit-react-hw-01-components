@@ -1,0 +1,19 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  width: calc(100% / 5);
+
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.item:not(:last-child) {
+  box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.5);
+}
+/* .label {
+} */
+.percentage {
+  font-size: 20px;
+}

@@ -1,0 +1,14 @@
+.profile {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  font-size: 16px;
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 1), -23px 0 20px -23px rgba(0, 0, 0, 0.8),
+    23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
