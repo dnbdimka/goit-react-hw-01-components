@@ -1,9 +1,8 @@
 import React from "react";
-import data from "../../data";
 import TransactionHistoryList from "./transactionHistoryList/TransactionHistoryList";
 import styles from "./TransactionHistory.module.css";
 
-const TransactionHistory = () => {
+const TransactionHistory = ({ transactions }) => {
   return (
     <div className={styles.transactionHistoryContainer}>
       <table className={styles.transactionHistory}>
@@ -16,7 +15,7 @@ const TransactionHistory = () => {
         </thead>
 
         <tbody>
-          {data.transactions.map((transaction) => (
+          {transactions.map((transaction) => (
             <TransactionHistoryList
               key={transaction.id}
               transaction={transaction}
