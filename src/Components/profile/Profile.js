@@ -3,12 +3,12 @@ import Description from "./description/Description";
 import StatsList from "./statsList/StatsList";
 import { profile } from "./Profile.module.css";
 
-const Profile = ({ user }) => {
+const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
     <div className={profile}>
-      <Description user={user} />
+      <Description name={name} avatar={avatar} tag={tag} location={location} />
 
-      <StatsList user={user} />
+      <StatsList stats={stats} />
     </div>
   );
 };

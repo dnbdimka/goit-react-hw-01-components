@@ -8,8 +8,14 @@ import TransactionHistory from "./transactions/TransactionHistory";
 const App = () => {
   return (
     <>
-      <Profile user={data.user} />
-      <Statistics statistics={data.statistics} />
+      <Profile
+        name={data.user.name}
+        tag={data.user.tag}
+        location={data.user.location}
+        avatar={data.user.avatar}
+        stats={data.user.stats}
+      />
+      <Statistics title="Upload stats" statistics={data.statistics} />
       <Friends friends={data.friends} />
       <TransactionHistory transactions={data.transactions} />
     </>
